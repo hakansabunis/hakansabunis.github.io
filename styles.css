@@ -1,107 +1,104 @@
 /* Genel ayarlar */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header (Başlık kısmı) */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Ayarları */
 header {
-    background-color: #2c3e50; /* Koyu gri/mavi arka plan */
-    color: white; /* Beyaz yazı */
+    background-color: #34495e;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin: 0;
 }
 
 p {
     font-size: 1.2em;
 }
 
-/* About Me, Education, Profile ve Projects Bölümleri */
-section {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 800px; /* Ortalanması için genişlik ayarlaması */
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-}
-
 /* Bölüm başlıkları */
 h2 {
+    color: #34495e;
     font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 5px;
 }
 
-/* Proje linkleri */
+/* İletişim Bölümü */
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Profil Resmi */
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Liste Stili */
 ul {
-    list-style-type: none; /* Noktaları kaldır */
+    list-style-type: none;
     padding: 0;
 }
 
 li {
     margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
-a {
-    text-decoration: none; /* Altı çizili olmaması için */
-    color: #2980b9; /* Mavi rengin daha koyusu */
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #3498db; /* Hover ile daha açık mavi */
-}
-
-/* Profile Fotoğrafı */
-#profile img {
-    width: 150px; /* Fotoğraf genişliği */
-    height: auto; /* Yükseklik otomatik */
-    border-radius: 50%; /* Yuvarlak fotoğraf */
-    margin-top: 15px;
-}
-
-/* Footer (Alt kısım) */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2c3e50; /* Koyu gri/mavi arka plan */
-    color: white; /* Beyaz yazı */
+    background-color: #34495e;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 footer a {
-    color: #ecf0f1; /* Footer linkleri için beyaz */
+    color: #ecf0f1;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #bdc3c7; /* Hover ile açık gri */
-}
-
-/* Responsive (Mobil uyumlu) ayarlar */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    p, h2 {
-        font-size: 1.2em;
-    }
-
-    section {
-        padding: 15px;
-    }
 }
