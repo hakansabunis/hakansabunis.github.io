@@ -14,6 +14,7 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 /* Header Ayarları */
@@ -33,6 +34,18 @@ p {
     font-size: 1.2em;
 }
 
+/* Profil Resmi Sağ Üstte */
+.profile-image {
+    position: absolute;
+    top: 20px; /* Üstten boşluk */
+    right: 20px; /* Sağdan boşluk */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Bölüm başlıkları */
 h2 {
     color: #34495e;
@@ -45,19 +58,20 @@ h2 {
 /* İletişim Bilgisi */
 #contact {
     margin-bottom: 40px;
-    position: relative;
 }
 
-/* Profil Resmi Sağ Tarafta */
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    float: right;  /* Sağ tarafa hizalandı */
-    margin-left: 20px;  /* Metinle arasına boşluk ekledik */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Deneyim Bölümü */
