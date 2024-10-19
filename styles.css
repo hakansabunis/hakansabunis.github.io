@@ -44,6 +44,9 @@ h2 {
 
 /* İletişim Bilgisi */
 #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Sola hizalar */
     margin-bottom: 40px;
 }
 
@@ -69,8 +72,6 @@ h2 {
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-top: 20px;
-    float: right;
-    margin-left: 20px; 
 }
 
 /* Deneyim Bölümü */
@@ -85,8 +86,8 @@ h2 {
 }
 
 .experience-logo {
-    width: 50px; 
-    height: auto;
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
     border-radius: 5px;
 }
@@ -129,12 +130,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Logoların hizalanması */
-.experience-item img {
-    max-width: 50px; 
-    height: auto;
-    margin-right: 15px;
-    border-radius: 4px;
 }
