@@ -3,19 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Car Park Sensor with PIC16F877A">
-    <title>Autonomous Car</title>
+    <meta name="description" content="Car Park Sensor Project">
+    <title>Car Park Sensor Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Autonomous Car Project</h1>
+        <h1>Car Park Sensor Project</h1>
     </header>
 
     <div class="container">
+        <!-- Proje Detayları -->
         <section id="project-details">
             <h2>Project Overview</h2>
-            <p>This is the page for the Autonomous Car project. Further details will be added later.</p>
+            <p>This project focused on designing a car park sensor system using the PIC16F877A microcontroller. The system utilized two HC-SR04 ultrasonic sensors to measure the distance and angle of objects near the vehicle, providing the driver with audio and visual feedback to ensure safe parking.</p>
+
+            <h2>Materials</h2>
+            <ul>
+                <li>20MHz Crystal</li>
+                <li>2 x 22pF Capacitors</li>
+                <li>16x2 LCD Display</li>
+                <li>PIC16F877A Microcontroller</li>
+                <li>1 x 10kΩ Resistor</li>
+                <li>4 x 330Ω Resistors</li>
+                <li>4 x LEDs</li>
+                <li>Buzzer</li>
+                <li>2 x HC-SR04 Ultrasonic Sensors</li>
+                <li>10kΩ Potentiometer</li>
+                <li>5V Adapter</li>
+            </ul>
+
+            <h2>Project Description</h2>
+            <p>The car park sensor system is designed to prevent collisions during parking by providing real-time feedback to the driver. It uses ultrasonic sensors to detect objects, and the measured distances are conveyed both visually and audibly. The main components of the system are:</p>
+
+            <ul>
+                <li><strong>PIC16F877A Microcontroller:</strong> The core of the system, responsible for processing the distance data received from the ultrasonic sensors.</li>
+                <li><strong>HC-SR04 Ultrasonic Sensors:</strong> These sensors detect the distance and angle of objects around the vehicle.</li>
+                <li><strong>16x2 LCD Display:</strong> The display shows the measured distance information, allowing the driver to visually gauge how far they are from an obstacle.</li>
+                <li><strong>Buzzer:</strong> Provides audible feedback to alert the driver when an object is detected within a critical distance.</li>
+                <li><strong>LEDs:</strong> The LEDs give additional visual warnings, lighting up based on the proximity of nearby objects.</li>
+                <li><strong>20MHz Crystal & Capacitors:</strong> These components stabilize the microcontroller's operation, ensuring accurate readings and system stability.</li>
+                <li><strong>Resistors & Potentiometer:</strong> Used to fine-tune the system, ensuring proper voltage levels and LED brightness.</li>
+            </ul>
+
+            <h2>Implementation Steps</h2>
+            <p>The project was implemented in the following steps:</p>
+            <ul>
+                <li><strong>System Design:</strong> The car park sensor system was designed using the PIC16F877A microcontroller and HC-SR04 sensors. The microcontroller processed the sensor data and provided output to the LCD, LEDs, and buzzer.</li>
+                <li><strong>Sensor Integration:</strong> Two ultrasonic sensors were placed on the vehicle to measure the distance and angle of nearby objects. This data was transmitted to the microcontroller for real-time processing.</li>
+                <li><strong>Display & Alert System:</strong> The 16x2 LCD displayed distance information, while the buzzer and LEDs provided audible and visual alerts based on the sensor readings.</li>
+                <li><strong>Stabilization:</strong> The system was stabilized using a 20MHz crystal oscillator and capacitors to ensure reliable operation.</li>
+            </ul>
+
+            <h2>Testing and Results</h2>
+            <ul>
+                <li>The system was tested in various parking scenarios, including tight spaces and reversing maneuvers. The ultrasonic sensors successfully detected objects within range, and the LCD displayed accurate distance information.</li>
+                <li>The buzzer provided timely alerts, increasing in frequency as the vehicle approached obstacles.</li>
+                <li>LEDs illuminated sequentially based on the proximity of the object, providing an extra layer of warning for the driver.</li>
+            </ul>
+
+            <h2>Project Images</h2>
+            <img src="car_park1.jpg" alt="Car Park Sensor Circuit" width="400px">
+            <img src="car_park2.jpg" alt="Car Park Sensor Display" width="400px">
+
+            <h2>Conclusion</h2>
+            <p>The Car Park Sensor project successfully demonstrated the use of ultrasonic sensors and a microcontroller to provide real-time feedback during parking. The combination of visual (LCD and LEDs) and audible (buzzer) warnings ensured a safer and more efficient parking experience. The system can be further enhanced by adding more sensors or improving the visual interface.</p>
         </section>
     </div>
 
