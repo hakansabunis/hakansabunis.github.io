@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAB+ SDR Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Audio Broadcasting (DAB+) – SDR Transmission</h1>
+    <p><strong>Tech Stack:</strong> ODR-DabMux, ODR-DabMod, ODR-AudioEnc, PlutoSDR (ADALM-PLUTO), OFDM, Linux, Wireshark, dablin, MOT Slideshow, CAP XML (EWS)</p>
+
+    <h2>Overview</h2>
+    <p>
+      This project focuses on building a complete Digital Audio Broadcasting (DAB+) transmission chain 
+      using Software Defined Radio tools and open-source broadcasting software. 
+      The system ingests encoded audio, multiplexes multiple services, performs OFDM modulation, 
+      and transmits the signal over-the-air with PlutoSDR. 
+      The implementation also included MOT Slideshow (images & text messages) and 
+      a prototype Emergency Warning System (EWS) override path based on CAP XML.
+    </p>
+
+    <h2>Objectives</h2>
+    <ul>
+      <li>Design and deploy a full DAB+ pipeline (encoding → multiplexing → modulation → SDR transmission).</li>
+      <li>Configure ensemble/services with correct labels, PTY, ECC, and language fields.</li>
+      <li>Enable and test MOT Slideshow and Dynamic Label Segment (DLS).</li>
+      <li>Prototype an Emergency Warning System (EWS) signal override scenario.</li>
+    </ul>
+
+    <h2>System Design</h2>
+    <ul>
+      <li><strong>Encoding:</strong> ODR-AudioEnc (HE-AAC v2, stereo audio).</li>
+      <li><strong>Multiplexing:</strong> ODR-DabMux (INFO config files for ensemble, services, subchannels, MOT, PAD/DLS).</li>
+      <li><strong>Modulation:</strong> ODR-DabMod (OFDM Mode I, guard interval & interleaving per ETSI spec).</li>
+      <li><strong>Transmission:</strong> PlutoSDR (frequency calibration, TX gain, sampling rate adjustments).</li>
+      <li><strong>Monitoring:</strong> dablin/dablin_gtk for live reception, Wireshark for EDI/ETI stream inspection.</li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+      <li>Achieved stable DAB+ on-air transmission with audio services successfully decoded on receivers.</li>
+      <li>MOT Slideshow and Dynamic Label messages displayed correctly.</li>
+      <li>Documented configuration templates for faster ensemble bring-up and testing.</li>
+      <li>EWS manual test path validated: CAP XML alert triggered priority audio/visual override.</li>
+    </ul>
+
+    <h2>Gallery</h2>
+    <p>Add screenshots or diagrams here, e.g. PlutoSDR hardware photo, dablin GUI, or config snippet.</p>
+    <img src="dab_project.jpg" alt="DAB+ Block Diagram" style="max-width:500px;">
+
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+</body>
+</html>
