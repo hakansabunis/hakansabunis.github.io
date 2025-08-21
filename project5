@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAB+ SDR Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Audio Broadcasting (DAB+) – SDR Transmission</h1>
+    <p><strong>Tech:</strong> ODR-DabMux, ODR-DabMod, ODR-AudioEnc, PlutoSDR, OFDM, Linux, Wireshark, MOT Slideshow, EWS</p>
+
+    <h2>Overview</h2>
+    <p>
+      This project focused on building a complete DAB+ broadcast chain using Software Defined Radio tools. 
+      I integrated encoding, multiplexing, modulation, and RF transmission stages with PlutoSDR and validated reception 
+      using DAB receiver applications. Additionally, I implemented MOT Slideshow and tested an Emergency Warning System (EWS) override path using CAP XML.
+    </p>
+
+    <h2>System Design</h2>
+    <ul>
+      <li><strong>Encoding:</strong> ODR-AudioEnc (HE-AAC v2)</li>
+      <li><strong>Multiplexing:</strong> ODR-DabMux (ensemble, services, MOT, PAD/DLS)</li>
+      <li><strong>Modulation:</strong> ODR-DabMod (Mode I)</li>
+      <li><strong>RF Transmission:</strong> PlutoSDR calibration and broadcast</li>
+      <li><strong>Monitoring:</strong> dablin, Wireshark inspection of ETI/EDI streams</li>
+    </ul>
+
+    <h2>Results</h2>
+    <ul>
+      <li>Stable over-the-air transmission confirmed with DAB receivers</li>
+      <li>Slideshow and dynamic labels successfully displayed</li>
+      <li>Manual EWS override tested and validated at multiplexer level</li>
+    </ul>
+
+    <a href="index.html">← Back to Home</a>
+  </div>
+</body>
+</html>
